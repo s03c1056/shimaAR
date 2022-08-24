@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AR</title>
+    <link rel="stylesheet" href="ar-style.css" />
+  </head>
+  <body ontouchstart="">
+
+    A
+    <div class="card">
+      <model-viewer
+        src="../image/tel.fbx"
+        ios-src="../image/tel.usdz"
+        ar ar-modes="scene-viewer webxr quick-look" alt="break"
+        quick-look-browsers="safari chrome" camera-controls>
+        <button class="ar-button" slot="ar-button">
+          ARを起動する
+        </button>
+      </model-viewer>
+    </div>
+
+
+    <!-- <div class="card">
+      <model-viewer
+        src="../image/standing.glb"
+        ios-src="../image/standing.usdz"
+        ar ar ar-modes="scene-viewer webxr quick-look" alt="まっすぐくまモン"
+        quick-look-browsers="safari chrome">
+        <button class="ar-button" slot="ar-button">
+          まっすぐくまモンARカメラを起動する
+        </button>
+      </model-viewer>
+    </div>
+
+    <div class="card">
+      <model-viewer
+        src="../image/run.glb"
+        ios-src="../image/run.usdz"
+        ar ar-modes="scene-viewer webxr quick-look" alt="走るくまモン"
+        quick-look-browsers="safari chrome">
+        <button class="ar-button" slot="ar-button">
+          走るくまモンARカメラを起動する
+        </button>
+      </model-viewer>
+    </div> -->
+
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+  </body>
+</html>
