@@ -6,11 +6,14 @@
     <title>AR</title>
     <link rel="stylesheet" href="ar-style.css" />
   </head>
-  <body ontouchstart="">
+  <body ontouchstart="" style="background-color: #f5b2b2">
+    <div style="width: auto; height: 400px">
+      <img src="image/guts_shima_moji.png" width="100%">
+    </div>
     <div class="card">
       <model-viewer
-        src="../image/guts_shima2.glb"
-        ios-src="../image/guts_shima1.usdz"
+        src="image/guts_shima.glb"
+        ios-src="image/guts_shima.usdz"
         ar ar-modes="scene-viewer webxr quick-look" alt="break"
         quick-look-browsers="safari chrome" camera-controls
         shadow-intensity="1" 
@@ -22,20 +25,6 @@
       </model-viewer>
     </div>
 
-    <div class="card">
-      <model-viewer
-        src="../image/shima3.glb"
-        ios-src="../image/guts_shima1.usdz"
-        ar ar-modes="scene-viewer webxr quick-look" alt="break"
-        quick-look-browsers="safari chrome" camera-controls
-        shadow-intensity="1" 
-        autoplay exposure="0.5" 
-        shadow-softness="1">
-        <button class="ar-button" slot="ar-button">
-          ARを起動する
-        </button>
-      </model-viewer>
-    </div>
     <!-- <div class="card">
       <model-viewer
         src="../image/standing.glb"
